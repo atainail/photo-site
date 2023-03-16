@@ -451,9 +451,7 @@ i:hover{
         /* width: 100%; */
       }
 
-      .dropdown:hover>.dropdown-menu {
-        display: block;
-      }
+     
        
       .larger-screens {
         display: inline;
@@ -468,25 +466,6 @@ i:hover{
         height: 1.2em;
         color: white !important;
       }
-
-
-      /* Hover drop down should activate with this */
-      .navbar .nav-item .dropdown-menu { 
-        display: none; 
-      }
-      
-      .navbar, .nav-item:hover, .dropdown-menu{ 
-        display: inline; 
-      }
-    
-      .navbar, .nav-item, .dropdown-menu{ 
-        margin-top: 0; 
-      }
-
-
-      /* .dropdown:hover>.dropdown-menu {
-        display: block;
-      } */
 
 
  }
