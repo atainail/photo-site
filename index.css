@@ -1,0 +1,407 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* background: linear-gradient(black, rgb(84, 84, 84)); */
+
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: gray;  */
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.navbar{
+    color: white;
+}
+
+a.navbar-brand, a.navbar-brand:visited, a.navbar-brand:hover, a.navbar-brand:active {
+  animation: brandFadeIn 6s;
+    -webkit-animation: brandFadeIn 6s;
+    -moz-animation: brandFadeIn 6s;
+    -o-animation: brandFadeIn 6s;
+    -ms-animation: brandFadeIn 6s;
+    animation-fill-mode: forwards;
+    transition: .5s;
+}
+
+.navbar-brand:hover {
+  transform: translate(0, -2em);
+}
+
+.navbar-nav {
+  background-color: black;
+opacity: 80%;
+}
+
+.nav-item {
+  padding: 2em;
+  font-size: 1.2em;
+}
+
+
+hr {
+  width: 80%;
+  padding: 0 0 1.5em 0;
+  color: white !important;
+
+}
+
+a.nav-link, a.nav-link:visited, a.nav-link:hover, a.nav-link:active 
+{
+  transition: 1s;
+  color: white !important;
+   
+}
+
+a.nav-link:hover{
+  transform: translate(.5em, 0);
+  background-color: grey;
+}
+
+svg {
+  color: white;
+  transition: 1s;
+  width: 2em;
+  height: 2em;
+  padding: 0 0 .5em 0;
+}
+
+svg:hover {
+  transform: translate(0, -.5em);
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.scroll-down {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+
+  animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    font-size: 3em;
+  
+}
+
+.scroll-down svg {
+  width: 4em;
+  height: 4em;
+  padding: 1.2em 0 0 0;
+  animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+}
+
+ 
+
+.social {
+  padding: 2em 0 0 0;
+}
+
+
+i {
+  color: white;
+  transition: all .2s;
+}
+
+i:hover{
+  transform: translate(0, -.3em);
+}
+
+#spin {
+  transition: transform 1.5s;
+}
+
+
+.wedding-photos img{
+  width: 30em;
+  height: 45m;
+  padding: 5em 2em 2em 2em ;
+
+  /* animation: photoFadeIn 4s;
+    -webkit-animation: photoFadeIn 4s;
+    -moz-animation: photoFadeIn 4s;
+    -o-animation: photoFadeIn 4s;
+    -ms-animation: photoFadeIn 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    opacity: 0; */
+
+    
+}
+
+/* Reveal tutorial found here https://alvarotrigo.com/blog/css-animations-scroll/ */
+.reveal {
+  position: relative;
+  opacity: 0;
+  transition: all 1s;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+#carouselExampleIndicators{
+  padding: 2em;
+  height: 100vh;
+  width: 90%;
+}
+
+#carouselExampleIndicators img{
+  padding: 2em;
+  height: 95vh;
+  width: 100%;
+}
+  
+  .carousel h5{
+    color:blue;    
+    
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 4s;
+    -moz-animation: fadeIn 4s;
+    -o-animation: fadeIn 4s;
+    -ms-animation: fadeIn 4s;
+    animation-fill-mode: forwards;
+  }
+
+  .carousel { 
+    animation: photoFadeIn 4s;
+    -webkit-animation: photoFadeIn 4s;
+    -moz-animation: photoFadeIn 4s;
+    -o-animation: photoFadeIn 4s;
+    -ms-animation: photoFadeIn 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    
+  }
+
+
+  
+
+  .carousel p{
+    color: black;
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 4s;
+    -moz-animation: fadeIn 4s;
+    -o-animation: fadeIn 4s;
+    -ms-animation: fadeIn 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+ 
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translate(0px);}
+    100% { opacity: 1; transform: translate(0, -1.2em);}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; transform: translate(0px);}
+    100% { opacity: 1; transform: translate(0, -1.2em);}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; transform: translate(0px);}
+    100% { opacity: 1; transform: translate(0, -1.2em);}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; transform: translate(0px);}
+    100% { opacity: 1; transform: translate(0, -1.2em);}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; transform: translate(0px);}
+    100% { opacity: 1; transform: translate(0, -1.2em);}
+    
+  }
+
+
+  @keyframes brandFadeIn {
+    0% { opacity: 0; transform: translate(0px);}
+    100% { opacity: 1; transform: translate(0, -.5em);}
+  }
+  
+  @-moz-keyframes brandFadeIn {
+    0% { opacity: 0; transform: translate(0px);}
+    100% { opacity: 1; transform: translate(0, -.5em);}
+  }
+  
+  @-webkit-keyframes brandFadeIn {
+    0% { opacity: 0; transform: translate(0px);}
+    100% { opacity: 1; transform: translate(0, -.5em);}
+  }
+  
+  @-o-keyframes brandFadeIn {
+    0% { opacity: 0; transform: translate(0px);}
+    100% { opacity: 1; transform: translate(0, -.5em);}
+  }
+  
+  @-ms-keyframes brandFadeIn {
+    0% { opacity: 0; transform: translate(0px);}
+    100% { opacity: 1; transform: translate(0, -.5em);}
+    
+  }
+
+
+  
+
+  @keyframes photoFadeIn {
+    0% { opacity: 0; transform: translate(1.5em, 0);}
+    100% { opacity: 1; transform: translate(0, 0);}
+  }
+  
+  @-moz-keyframes photoFadeIn {
+    0% { opacity: 0; transform: translate(1.5em, 0);}
+    100% { opacity: 1; transform: translate(0, 0);}
+  }
+  
+  @-webkit-keyframes photoFadeIn {
+    0% { opacity: 0; transform: translate(1.5em, 0);}
+    100% { opacity: 1; transform: translate(0, 0);}
+  }
+  
+  @-o-keyframes photoFadeIn {
+    0% { opacity: 0; transform: translate(1.5em, 0);}
+    100% { opacity: 1; transform: translate(0, 0);}
+  }
+  
+  @-ms-keyframes photoFadeIn {
+    0% { opacity: 0; transform: translate(1.5em, 0);}
+    100% { opacity: 1; transform: translate(0, 0);}
+    
+  }
+
+/* After Medium device size is reached  (tablets, less than 992px) */
+  @media (min-width: 768px) { 
+
+    #carouselExampleIndicators{
+      height: 100vh;
+      width: 65%;
+    }
+    
+
+
+}
+
+
+
+/* Large and highrt */
+@media (min-width: 992px) { 
+      .social {
+        display: none;
+      }
+
+      .navbar {
+        /* display: none; */
+      }
+
+      .nav-item {
+        transform: translate(0, -1.5em);
+        padding: 1em 8em 0 0;
+        font-size: 1.3em;
+      }   
+
+      .navbar-nav, a.nav-link:hover {
+        background-color: transparent;
+      
+      }
+
+      
+
+      #carouselExampleIndicators{
+        height: 100vh;
+        width: 50%;
+      }
+
+      .carousel {
+        /* float: right; */
+        /* width: 100%; */
+      }
+
+      .dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+       
+
+
+
+ }
