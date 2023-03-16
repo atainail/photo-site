@@ -420,9 +420,9 @@ i:hover{
 
 /* Large and highrt */
 @media (min-width: 992px) { 
-      /* .social {
+      .social {
         display: none;
-      } */
+      }
 
       .navbar {
         /* display: none; */
@@ -456,13 +456,19 @@ i:hover{
       }
        
       .larger-screens {
-        display: block;
+        display: inline;
       }
 
-      .social {
-        transform: translate(0, .9em);
-        font-size: .8em;
+      .social-large {
+        
       }
+      
+      .social-large svg {
+        width: 1.2em;
+        height: 1.2em;
+        color: white !important;
+      }
+
 
       /* Hover drop down should activate with this */
       .navbar .nav-item .dropdown-menu { 
