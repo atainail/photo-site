@@ -56,6 +56,7 @@ a.navbar-brand, a.navbar-brand:visited, a.navbar-brand:hover, a.navbar-brand:act
 
 .navbar-nav {
   background-color: black;
+  opacity: 80%;
 }
 
 .nav-item {
