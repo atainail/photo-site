@@ -390,27 +390,39 @@ i:hover{
     
   }
 
+ .larger-screens {
+      display: none;
+    }
+    
 
 
-/* After Medium device size is reached  (tablets, less than 992px) */
+
+
+    /* After Medium device size is reached  (tablets, less than 992px) */
   @media (min-width: 768px) { 
 
     #carouselExampleIndicators{
       height: 100vh;
       width: 65%;
     }
-    
-
-
 }
+
+@media (min-width: 769px) { 
+
+  #carouselExampleIndicators{
+    height: 100vh;
+    width: 75%;
+  }
+}
+
 
 
 
 /* Large and highrt */
 @media (min-width: 992px) { 
-      .social {
+      /* .social {
         display: none;
-      }
+      } */
 
       .navbar {
         /* display: none; */
@@ -443,7 +455,32 @@ i:hover{
         display: block;
       }
        
+      .larger-screens {
+        display: block;
+      }
 
+      .social {
+        transform: translate(0, .9em);
+        font-size: .8em;
+      }
+
+      /* Hover drop down should activate with this */
+      .navbar .nav-item .dropdown-menu { 
+        display: none; 
+      }
+      
+      .navbar, .nav-item:hover, .dropdown-menu{ 
+        display: block; 
+      }
+    
+      .navbar, .nav-item, .dropdown-menu{ 
+        margin-top: 0; 
+      }
+
+
+      /* .dropdown:hover>.dropdown-menu {
+        display: block;
+      } */
 
 
  }
