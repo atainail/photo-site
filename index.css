@@ -84,7 +84,7 @@ a.nav-link:hover{
   background-color: grey;
 }
 
-svg {
+.social svg {
   color: white;
   transition: 1s;
   width: 2em;
@@ -92,7 +92,7 @@ svg {
   padding: 0 0 .5em 0;
 }
 
-svg:hover {
+.social svg:hover {
   transform: translate(0, -.5em);
 }
 
@@ -369,24 +369,23 @@ i:hover{
     
   }
 
-  .top-of-page {
-     
+  .top-of-page{
+    color: white ;
     position: fixed;
+    width: 2em;
+    height: 2em;
     bottom: 25%;
     right: 0;
-    font-size: 2em;
+    /* font-size: 2em; */
     transition: all 1s;
-    opacity: 0;
+     
   }
 
-  .top-of-page:hover {
+  /* .top-of-page:hover {
     text-shadow: 2px 2px .2em white;
-    transform: translate(0px);
-  }
 
-  .top-of-page:active {
-    opacity: 1;
-  }
+  } */
+
 
 
 /* After Medium device size is reached  (tablets, less than 992px) */
