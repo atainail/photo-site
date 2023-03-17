@@ -38,6 +38,9 @@ body {
 .navbar{
     color: white;
     text-shadow: 2px 2px .2em black;
+    /* cccccccccccccccc */
+    top: 0;
+    /* ccccccccccccccccc */
 }
 
 a.navbar-brand, a.navbar-brand:visited, a.navbar-brand:hover, a.navbar-brand:active {
