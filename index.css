@@ -68,7 +68,7 @@ a.navbar-brand, a.navbar-brand:visited, a.navbar-brand:hover, a.navbar-brand:act
 hr {
   width: 80%;
   padding: 0 0 1.5em 0;
-  color: white !important;
+  /* color: white !important; */
 
 }
 
@@ -86,10 +86,10 @@ a.nav-link:hover{
 
 .social svg {
   color: white;
-  transition: 1s;
   width: 2em;
   height: 2em;
   padding: 0 0 .5em 0;
+  transition: 1s;
 }
 
 .social svg:hover {
@@ -455,11 +455,13 @@ i:hover{
        
       .larger-screens {
         display: grid;
+        padding: 3em 0 0 0;
       }
 
 
       .social-large {
-        
+        color: white;
+        padding: 0 0 2em 0;
       }
 
       
@@ -475,6 +477,15 @@ i:hover{
       .social-large svg:hover {
         transform: translate(0, -.2em);
       }
+
+
+      .footer-text{
+        color: white;
+        border-top: 1px solid white;
+        padding: 2em 0 2em 0;
+      }
+
+      
 
 
  }
