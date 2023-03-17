@@ -466,16 +466,16 @@ i:hover{
 
       
       .social-large svg {
-        width: 1.2em;
-        height: 1.2em;
+        width: 1.5em;
+        height: 1.5em;
         color: white;
-        transform: translate(0, -.2em);
         transition: all 1s;
          
       }
 
       .social-large svg:hover {
-        transform: translate(0, -.2em);
+        transform: translate(0, -.9em);
+        color: rgb(55, 55, 55);
       }
 
 
