@@ -8,8 +8,10 @@ $('.navigation-import').load("nav.txt");
 
 
 
-
-
+//toggles dropdown menu on hover
+$('.dropdown').hover(function(){ 
+  $('.dropdown-toggle', this).trigger('click'); 
+});
 
 
 
