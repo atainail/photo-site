@@ -7,10 +7,6 @@
     </button>
     <div class="collapse navbar-collapse center" id="navbarResponsive">
       <ul class="navbar-nav ms-auto row center">
-
-        <li>
-          <hr style="color: white">
-        </li>
         
         
         <li class="nav-item active col-md center">
