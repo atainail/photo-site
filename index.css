@@ -40,6 +40,7 @@ body {
     text-shadow: 2px 2px .2em black;
     /* cccccccccccccccc */
     top: 0;
+
     /* padding: 0 0 0 50%; */
     position:fixed;
     /* ccccccccccccccccc */
@@ -105,6 +106,10 @@ a.nav-link:hover{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    
+    /* ssssssssss */
+    display: block;
+    /* sssssssssssssssss */
 }
 
 .scroll-down {
