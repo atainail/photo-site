@@ -28,6 +28,7 @@
           <div class="dropdown-menu center" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="wedding.html">Weddings</a>
             <a class="dropdown-item" href="headshots.html">Headshots</a>
+            <a class="dropdown-item" href="nature.html">Nature</a>
           </div>
         </li>
 
