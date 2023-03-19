@@ -19,6 +19,7 @@ $('.dropdown').hover(function(){
 let weddingPicsArr = [];
 let headShotsArr = [];
 let natureArr = [];
+let title = $(document).find("title").text();
 
 function importPictures(totalNumOfPhotos, arrName, folderName, photoType) {
     for (let i = 1; i < totalNumOfPhotos + 1; i++) {
@@ -27,12 +28,15 @@ function importPictures(totalNumOfPhotos, arrName, folderName, photoType) {
         document.querySelector('.wedding-photos').innerHTML += `<img class="reveal " src="${folderName}/${photoType} (${i}).jpg">`;
         document.querySelector('.head-shots').innerHTML += `<img class="reveal " src="${folderName}/${photoType} (${i}).jpg">`;
         document.querySelector('.nature-shots').innerHTML += `<img class="reveal " src="${folderName}/${photoType} (${i}).jpg">`;
+
+
+        
         
     }
 
 }
 
-let title = $(document).find("title").text();
+
 
 if (title.includes('Weddings')) {
   // wedding photos from https://www.pexels.com/search/wedding/
