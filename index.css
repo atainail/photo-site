@@ -13,11 +13,74 @@ body {
 
 .bg-design {
   background-color: #555;
-  width: 100%;
+  border-radius: .5%;
   height: 100%;
   position: fixed;
-  z-index: 1;
+  transform: rotate(50deg);
+  
+  /* animation: bgFadeIn 1s;
+    -webkit-animation: bgFadeIn 1s;
+    -moz-animation: bgFadeIn 1s;
+    -o-animation: bgFadeIn 1s;
+    -ms-animation: bgFadeIn 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transition: transform 1s ease-out; */
+
+    animation: bgFadeIn 2s ease-in  forwards;
+    -moz-animation: bgFadeIn 2s ease-in  forwards; /* Firefox */
+        -webkit-animation: bgFadeIn 2s ease-in  forwards; /* Safari and Chrome */
+        -ms-animation: bgFadeIn 2s ease-in  forwards; /* IE10 */
+        -o-animation: bgFadeIn 2s ease-in  forwards; /* Opera */
+  
 }
+
+@-webkit-keyframes bgFadeIn { /* Chrome, Safari */ 
+  0% {width:0%} 
+  100% {width:70%;}
+}
+@-moz-keyframes bgFadeIn { /* FF */
+  0% {width:0%} 
+  100% {width:70%;}
+}
+@-ms-keyframes bgFadeIn { /* IE10 */
+  0% {width:0%} 
+  100% {width:70%;}
+}
+@-o-keyframes bgFadeIn { /* Opera */
+  0% {width:0%} 
+  100% {width:70%;}
+}
+@keyframes bgFadeIn {
+  0% {width:0%} 
+  100% {width:70%;}
+}
+
+/* @keyframes bgFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes bgFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes bgFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes bgFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes bgFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+} */
 
 .hidden img{
   display: none;
@@ -257,6 +320,7 @@ i:hover{
   padding: 2em;
   height: 95vh;
   width: 100%;
+  border-radius: 5%;
 }
   
   .carousel h5{
@@ -436,9 +500,7 @@ i:hover{
         display: none;
       }
 
-      .navbar {
-        display: none;
-      }  
+      
 
       #carouselExampleIndicators{
         height: 100vh;
@@ -498,8 +560,10 @@ i:hover{
       }
 
       .sidebar-title {
-        font-size: 3em;
-
+        font-size: 3.2em;
+      }
+      .sidebar-title:hover {
+        color: gray;
       }
 
       .sidebar-content {
@@ -549,4 +613,6 @@ i:hover{
       .dropdown-custom:hover {
          
       }
+
+      
  }
