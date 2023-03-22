@@ -11,6 +11,14 @@ body {
     
 }
 
+.bg-design {
+  background-color: #555;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
 .hidden img{
   display: none;
 }
@@ -54,10 +62,6 @@ a.navbar-brand, a.navbar-brand:visited, a.navbar-brand:hover, a.navbar-brand:act
     -ms-animation: brandFadeIn 6s;
     animation-fill-mode: forwards;
     transition: .5s;
-}
-
-.navbar-brand:hover {
-  transform: translate(0, -2em);
 }
 
 .navbar-nav {
@@ -107,9 +111,7 @@ a.nav-link:hover{
     margin-right: auto;
     text-align: center;
     
-    /* ssssssssss */
-    display: block;
-    /* sssssssssssssssss */
+  
 }
 
 .scroll-down {
@@ -435,34 +437,14 @@ i:hover{
       }
 
       .navbar {
-        /* display: none; */
-      }
-
-      .nav-item {
-        transform: translate(0, -1.5em);
-        padding: 1em 8em 0 0;
-        font-size: 1.3em;
-      }   
-
-      .navbar-nav, a.nav-link:hover {
-        background-color: transparent;
-      
-      }
-
-      
+        display: none;
+      }  
 
       #carouselExampleIndicators{
         height: 100vh;
-        width: 50%;
+        width: 45%;
       }
-
-      .carousel {
-        /* float: right; */
-        /* width: 100%; */
-      }
-
-     
-       
+      
       .larger-screens {
         display: grid;
         padding: 3em 0 0 0;
@@ -479,8 +461,7 @@ i:hover{
         width: 1.5em;
         height: 1.5em;
         color: white;
-        transition: all 1s;
-         
+        transition: all 1s;         
       }
 
       .social-large svg:hover {
@@ -488,14 +469,84 @@ i:hover{
         color: rgb(55, 55, 55);
       }
 
-
       .footer-text{
         color: white;
         border-top: 1px solid white;
         padding: 2em 0 2em 0;
       }
 
-      
+      .sidebar {
+        animation: photoFadeIn 4s;
+        -webkit-animation: photoFadeIn 4s;
+        -moz-animation: photoFadeIn 4s;
+        -o-animation: photoFadeIn 4s;
+        -ms-animation: photoFadeIn 4s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        width: 15em;
+        position: absolute;
+        top: 10%;
+        left: 5%;  
+      }
 
+      a.sidebar-content:link, a.sidebar-content:visited, a.sidebar-content:hover, a.sidebar-content:active,
+      a.sidebar-title:link, a.sidebar-title:visited, a.sidebar-title:hover, a.sidebar-title:active, 
+      a.dropdown-content-custom:link, a.dropdown-content-custom:visited, a.dropdown-content-custom:hover, a.dropdown-content-custom:active {
+        text-decoration: none;
+        color: white;
+      }
 
+      .sidebar-title {
+        font-size: 3em;
+
+      }
+
+      .sidebar-content {
+        animation: photoFadeIn 4s;
+        -webkit-animation: photoFadeIn 4s;
+        -moz-animation: photoFadeIn 4s;
+        -o-animation: photoFadeIn 4s;
+        -ms-animation: photoFadeIn 4s;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        padding: 3em 0 0 0;
+        position: relative;
+        left: 15%;
+        transition: all 1s;
+        font-size: 1.2em;
+      }
+
+      .sidebar-content:hover,
+      .dropdown-content-custom:hover {
+        letter-spacing: 2px;
+        color: gray;
+      }
+
+      .dropdown-custom {
+        padding: 0 0 0 0;
+        color: white;
+        transition: 1s;
+        
+      }
+
+      .dropdown-content-custom {
+        padding: 0 0 0 5em;
+        display: none;
+        transition: all .5s;          
+      }
+
+      .dropdown-content-custom a:hover {
+        
+      }
+
+      .dropdown-custom:hover .dropdown-content-custom {
+        display: block;
+        /* float: right; */
+      }
+
+      .dropdown-custom:hover {
+         
+      }
  }
