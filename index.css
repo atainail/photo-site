@@ -623,6 +623,11 @@ i:hover{
 
 /* Large and highrt */
 @media (min-width: 992px) { 
+
+    .navbar  {
+      top:0;
+    }
+
       .social {
         display: none;
       }
