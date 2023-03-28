@@ -11,6 +11,8 @@ body {
     
 }
 
+
+
 .sidebar {
   animation: photoFadeIn 4s;
   -webkit-animation: photoFadeIn 4s;
@@ -29,6 +31,7 @@ body {
 a:link, a:hover, a:visited, a:hover, a:active {
   text-decoration: none;
   color: white;
+  text-shadow: 2px 2px .2em black;
 }
 
 .sidebar-title {
@@ -61,24 +64,26 @@ a:link, a:hover, a:visited, a:hover, a:active {
   color: gray;
 }
 
-.dropdown-custom {
-  padding: 0 0 0 0;
+.dropdown-custom { 
   color: white;
-  transition: 1s;
-  
+}
+
+.left-side {
+  position: absolute;
+  padding: 1.2em 0 0 0;
+  left: -5%;
 }
 
 .dropdown-content-custom {
-  padding: 0 0 0 4em;
+  padding: 1.2em 0 0 1.2em;
   display: none;
-  transition: all .5s;    
-  z-index: 1;      
+  font-size: .8em;     
 }
 
 
 .dropdown-custom:hover .dropdown-content-custom {
-  display: block;
-  
+  display: flex;
+   
 }
 
 
@@ -105,7 +110,7 @@ a:link, a:hover, a:visited, a:hover, a:active {
   opacity: 0;
   width: 30em;
   position: absolute;
-  top: 85%;
+  top: 95%;
   left: 2%;  
   color: white;
   font-size: 1.2em;
@@ -127,8 +132,7 @@ a:link, a:hover, a:visited, a:hover, a:active {
   color: white;
   font-size: .8em;
   text-shadow: 2px 2px .2em black;
-
-  padding: 2em 0 0 2em;
+  padding: 1.2em 0 0 2em;
 }
 
 .sidebar, .credits {
