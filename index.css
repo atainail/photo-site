@@ -602,11 +602,11 @@ i:hover{
 
 
     /* After Medium device size is reached  (tablets, less than 992px) */
-  @media (min-width: 768px) { 
+  @media (min-width: 414px) { 
 
     #carouselExampleIndicators{
       height: 100vh;
-      width: 65%;
+      width: 80%;
     }
 }
 
