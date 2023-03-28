@@ -5,6 +5,7 @@ $('button').click(function() {
  
 
 $('.navigation-import').load("nav.txt");
+$('.footer-import').load("footer.txt");
 
 
 
@@ -27,13 +28,8 @@ function importPictures(totalNumOfPhotos, arrName, folderName, photoType) {
         arrName[i] = `<img class="reveal " src="${folderName}/${photoType}${i}.jpg">`;
         document.querySelector('.wedding-photos').innerHTML += `<img class="reveal " src="${folderName}/${photoType} (${i}).jpg">`;
         document.querySelector('.head-shots').innerHTML += `<img class="reveal " src="${folderName}/${photoType} (${i}).jpg">`;
-        document.querySelector('.nature-shots').innerHTML += `<img class="reveal " src="${folderName}/${photoType} (${i}).jpg">`;
-
-
-        
-        
+        document.querySelector('.nature-shots').innerHTML += `<img class="reveal " src="${folderName}/${photoType} (${i}).jpg">`;       
     }
-
 }
 
 
