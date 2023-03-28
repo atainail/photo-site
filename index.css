@@ -11,8 +11,128 @@ body {
     
 }
 
-.sidebar, .credits {
+.sidebar {
+  animation: photoFadeIn 4s;
+  -webkit-animation: photoFadeIn 4s;
+  -moz-animation: photoFadeIn 4s;
+  -o-animation: photoFadeIn 4s;
+  -ms-animation: photoFadeIn 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  width: 15em;
+  position: absolute;
+  top: .5%;
+  left: 2%;  
+}
+
+a:link, a:hover, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.2em;
+}
+.sidebar-title:hover {
+  color: gray;
+}
+
+.sidebar-content {
+  animation: photoFadeIn 4s;
+  -webkit-animation: photoFadeIn 4s;
+  -moz-animation: photoFadeIn 4s;
+  -o-animation: photoFadeIn 4s;
+  -ms-animation: photoFadeIn 4s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  padding: 3em 0 0 0;
+  position: relative;
+  left: 3%;
+  transition: all 1s;
+  font-size: 1.3em;
+}
+
+.sidebar-content:hover,
+.dropdown-content-custom:hover {
+  letter-spacing: 2px;
+  color: gray;
+}
+
+.dropdown-custom {
+  padding: 0 0 0 0;
+  color: white;
+  transition: 1s;
+  
+}
+
+.dropdown-content-custom {
+  padding: 0 0 0 4em;
   display: none;
+  transition: all .5s;    
+  z-index: 1;      
+}
+
+
+.dropdown-custom:hover .dropdown-content-custom {
+  display: block;
+  
+}
+
+
+
+.underline {
+  transition: 1s;
+  opacity: 0;
+}
+
+.underline:hover {
+  border-bottom: 2px solid white;
+  width: 150%;
+  opacity: 1;
+}
+
+.credits {
+  animation: photoFadeIn 4s;
+  -webkit-animation: photoFadeIn 4s;
+  -moz-animation: photoFadeIn 4s;
+  -o-animation: photoFadeIn 4s;
+  -ms-animation: photoFadeIn 4s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  width: 30em;
+  position: absolute;
+  top: 85%;
+  left: 2%;  
+  color: white;
+  font-size: 1.2em;
+  text-shadow: 2px 2px .2em black;
+}
+.credits-link {
+  animation: photoFadeIn 4s;
+  -webkit-animation: photoFadeIn 4s;
+  -moz-animation: photoFadeIn 4s;
+  -o-animation: photoFadeIn 4s;
+  -ms-animation: photoFadeIn 4s;
+  animation-delay: 4.75s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  width: 30em;
+  position: absolute;
+  top: 85%;
+  left: 2%;  
+  color: white;
+  font-size: .8em;
+  text-shadow: 2px 2px .2em black;
+
+  padding: 2em 0 0 2em;
+}
+
+.sidebar, .credits {
+  display: inline-block;
 }
 
 
@@ -555,6 +675,7 @@ i:hover{
       }
 
       .sidebar-title {
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 3.2em;
       }
       .sidebar-title:hover {
@@ -574,7 +695,7 @@ i:hover{
         position: relative;
         left: 15%;
         transition: all 1s;
-        font-size: 1.2em;
+        font-size: 1.3em;
       }
 
       .sidebar-content:hover,
@@ -651,6 +772,8 @@ i:hover{
         color: white;
         font-size: .8em;
         text-shadow: 2px 2px .2em black;
+
+        padding: 2em 0 0 2em;
       }
 
       .sidebar, .credits {
