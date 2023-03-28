@@ -581,11 +581,10 @@ i:hover{
     right: 0;
     font-size: 2em;
     animation-delay: 2s;
-    transition:  1s;
-    
+    transition: 1s;
+    z-index: 1;
      
   }
-
    
 
   .top-of-page svg:hover{
