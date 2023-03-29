@@ -8,11 +8,20 @@ $('.navigation-import').load("nav.txt");
 $('.footer-import').load("footer.txt");
 
 
-
-//toggles dropdown menu on hover
+$( document ).ready(function() {
+  
+  //toggles dropdown menu on hover
 $('.dropdown').hover(function(){ 
   $('.dropdown-toggle', this).trigger('click'); 
 });
+
+
+});
+
+//toggles dropdown menu on hover
+// $('.dropdown').hover(function(){ 
+//   $('.dropdown-toggle', this).trigger('click'); 
+// });
 
 
 
