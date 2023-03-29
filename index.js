@@ -1,7 +1,7 @@
 //toggles between + and - in the navbar
-$('button').click(function() {
-    $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
-});
+// $('button').click(function() {
+//     $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
+// });
  
 
 $('.navigation-import').load("nav.txt");
@@ -9,6 +9,11 @@ $('.footer-import').load("footer.txt");
 
 
 $( document ).ready(function() {
+//toggles between + and - in the navbar
+$('button').click(function() {
+  $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
+});
+  
   
   //toggles dropdown menu on hover
 $('.dropdown').hover(function(){ 
