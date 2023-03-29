@@ -609,6 +609,10 @@ i:hover{
         height: 100vh;
         width: 80%;
       }
+      #carouselExampleIndicators img{  
+        height: 100vh;
+        width: 100%;
+      }
       
     }
 
