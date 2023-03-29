@@ -3,9 +3,9 @@
 //     $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
 // });
  
-
-$('.navigation-import').load("nav.txt");
 $('.footer-import').load("footer.txt");
+$('.navigation-import').load("nav.txt");
+
 
 
 $( document ).ready(function() {
