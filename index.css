@@ -600,14 +600,17 @@ i:hover{
 
 
 
-    /* After Medium device size is reached  (tablets, less than 992px) */
-  @media (max-width: 415px) { 
-
-    #carouselExampleIndicators{
-      height: 100vh;
-      width: 80%;
+    @media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+      
+      #carouselExampleIndicators{  
+        height: 100vh;
+        width: 80%;
+      }
+      
     }
-}
 
 @media (min-width: 769px) { 
 
