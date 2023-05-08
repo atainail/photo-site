@@ -50,15 +50,15 @@ function importPictures(totalNumOfPhotos, arrName, folderName, photoType) {
 
 if (title.includes('Weddings')) {
   // wedding photos from https://www.pexels.com/search/wedding/
-    importPictures(25, weddingPicsArr, 'wedding-pics', 'wedding');
+    importPictures(18, weddingPicsArr, 'wedding-pics', 'wedding');
 }
 else if (title.includes('Headshots')) {
   //headshot photos from https://www.pexels.com/search/headshots/
-    importPictures(35, headShotsArr, 'headShots', 'head');
+    importPictures(18, headShotsArr, 'headShots', 'head');
 }
 else if (title.includes('Nature')) {
-  //headshot photos from https://www.pexels.com/search/headshots/
-    importPictures(30, natureArr, 'natureShots', 'nature');
+  //headshot photos from https://www.pexels.com/search/nature/
+    importPictures(18, natureArr, 'natureShots', 'nature');
 }
 
 
