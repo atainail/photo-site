@@ -679,6 +679,7 @@ i:hover{
         color: white;
         border-top: 1px solid white;
         padding: 2em 0 2em 0;
+	z-index: 2;
       }
 
       .sidebar {
